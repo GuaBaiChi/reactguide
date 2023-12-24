@@ -15,7 +15,7 @@ import { EXAMPLES, ExampleData, ExampleKey } from './essentialsComponents/data';
 
 function Essentials() {
   // function handleSelect(selectedButton: string) {
-  const [selectedTopic, setSelectedTopic] = useState<ExampleKey | null>(null);
+  const [selectedTopic, setSelectedTopic] = useState('')
 
   // function handleSelect(selectedButton: ExampleKey) {
   function handleSelect(selectedButton: ExampleKey) {
@@ -25,14 +25,14 @@ function Essentials() {
   }
 
   let tabContent = <p>Please select a topic</p>
-  if (selectedTopic !== null) {
+  if (selectedTopic) {
     tabContent = (
       <div id="tab-content">
-        <h3>{EXAMPLES[selectedTopic].title}</h3>
-        <p>{EXAMPLES[selectedTopic].description}</p>
+        <h3>{(EXAMPLES[selectedTopic as ExampleKey] as ExampleData).title}</h3>
+        <p>{(EXAMPLES[selectedTopic as ExampleKey] as ExampleData).description}</p>
         <pre>
           <code>
-            {EXAMPLES[selectedTopic].code}</code>
+            {(EXAMPLES[selectedTopic as ExampleKey] as ExampleData).code}</code>
         </pre>
       </div>
     )
