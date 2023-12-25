@@ -2,7 +2,7 @@ import React from 'react';
 import './ConditionalContent.css'
 
 // don't change the Component name "App"
-export default function App() {
+export default function ConditionalContent() {
   const [isDeleting, setIsDeleting] = React.useState(false);
 
   function deleteHandler() {
