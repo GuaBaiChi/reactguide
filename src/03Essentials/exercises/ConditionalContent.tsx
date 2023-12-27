@@ -53,7 +53,7 @@ export default function ConditionalContent() {
   // 3
   // 3
   // 3
-  // with an extra variable
+  // with an extra variable and an 'if' statement
 
   let warning;
   if (isDeleting) {
@@ -74,3 +74,23 @@ export default function ConditionalContent() {
   );
 }
 
+// 4
+// 4
+// 4
+// with a const
+
+// const warning = isDeleting ? (
+//   <div data-testid="alert" id="alert">
+//     <h2>Are you sure?</h2>
+//     <p>These changes can't be reverted!</p>
+//     <button onClick={proceedHandler}>Proceed</button>
+//   </div>
+// ) : null;
+
+// return (
+//   <div>
+//     {warning}
+//     <button onClick={deleteHandler}>Delete</button>
+//   </div>
+// );
+// }
