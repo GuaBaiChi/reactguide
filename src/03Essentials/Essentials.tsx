@@ -9,7 +9,7 @@ import stateImg from './state-mgmt.png';
 import { CORE_CONCEPTS } from './exercises/CoreConcepts';
 import Header from './essentialsComponents/Header/Header';
 import { CoreConcept, CoreConceptObjectDestructuring, CoreConceptRestProperty } from './essentialsComponents/CoreConcept';
-import TabButton, { TabButton2 } from './exercises/TabButton';
+import TabButton from './exercises/TabButton';
 import { EXAMPLES, ExampleData, ExampleKey } from './essentialsComponents/data';
 
 
@@ -55,10 +55,30 @@ function Essentials() {
         <section id="examples">
           <h2>Example</h2>
           <menu>
-            <TabButton onSelect={() => handleSelect('Components')}>Components</TabButton>
-            <TabButton onSelect={() => handleSelect('JSX')}>JSX</TabButton>
-            <TabButton onSelect={() => handleSelect('Props')}>Props</TabButton>
-            <TabButton onSelect={() => handleSelect('State')}>State</TabButton>
+            <TabButton
+              isSelected={selectedTopic === 'Components'}
+              onSelect={() => handleSelect('Components')}
+            >
+              Components
+            </TabButton>
+            <TabButton
+              isSelected={selectedTopic === 'JSX'}
+              onSelect={() => handleSelect('JSX')}
+            >
+              JSX
+            </TabButton>
+            <TabButton
+              isSelected={selectedTopic === 'Props'}
+              onSelect={() => handleSelect('Props')}
+            >
+              Props
+            </TabButton>
+            <TabButton
+              isSelected={selectedTopic === 'State'}
+              onSelect={() => handleSelect('State')}
+            >
+              State
+            </TabButton>
           </menu>
           {tabContent}
         </section>

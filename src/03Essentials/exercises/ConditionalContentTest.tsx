@@ -20,25 +20,18 @@ export default function ConditionalContent() {
     setIsDeleting(false)
   }
 
-  let warning
-  if (isDeleting) {
-    warning = (
-
-      <div data-testid="alert" id="alert">
-        <h2>Are you sure?</h2>
-        <p>These changes can't be reverted!</p>
-        <button onClick={proceedHandler}>Proceed</button>
-      </div>
-    )
-
-  }
 
 
   return (
     <div>
-      {warning}
-
+      {isDeleting &&
+        <div data-testid="alert" id="alert">
+          <h2>Are you sure?</h2>
+          <p>These changes can't be reverted!</p>
+          <button onClick={proceedHandler}>Proceed</button>
+        </div>
+      }
       <button onClick={deleteHandler}>Delete</button>
-    </div >
+    </div>
   );
 }

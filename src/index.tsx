@@ -6,6 +6,7 @@ import JSRefresher from './02JSRefresher/JSRefresher';
 import Essentials from './03Essentials/Essentials';
 import ConditionalContentTest from './03Essentials/exercises/ConditionalContentTest';
 import ConditionalContent from './03Essentials/exercises/ConditionalContent'
+import DynamicStyling from './03Essentials/exercises/DynamicStyling';
 
 
 const root = ReactDOM.createRoot(
@@ -16,8 +17,9 @@ root.render(
     {/* <Starter /> */}
     {/* <JSRefresher /> */}
     {/* <Essentials /> */}
-    <ConditionalContentTest />
+    {/* <ConditionalContentTest /> */}
     {/* <ConditionalContent /> */}
+    <DynamicStyling />
   </React.StrictMode>
 );
 
