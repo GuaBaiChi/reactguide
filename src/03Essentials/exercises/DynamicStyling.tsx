@@ -2,11 +2,7 @@
 import React from 'react';
 import './DynamicStyling.css'
 
-type buttonProps = {
-  isSelected?: boolean
-}
-
-export default function DynamicStyling(props: buttonProps) {
+export default function DynamicStyling() {
   const [highlighted, setHighlighted] = React.useState(false);
 
   function handleClick() {
