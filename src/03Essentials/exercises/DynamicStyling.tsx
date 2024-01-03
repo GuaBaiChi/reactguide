@@ -2,17 +2,18 @@
 import React from 'react';
 import './DynamicStyling.css'
 
-export default function DynamicStyling() {
-  const [highlighted, setHighlighted] = React.useState(false);
 
-  function handleClick() {
-    setHighlighted(isHighlighted => !isHighlighted);
+export default function DynamicStyling() {
+  const [isToggled, setIsToggled] = React.useState(false)
+
+  function toggleHandler() {
+    setIsToggled(isToggled => !isToggled)
   }
 
   return (
     <div>
-      <p className={highlighted ? 'active' : undefined}>Style me!</p>
-      <button onClick={handleClick}>Toggle style</button>
+      <p className={isToggled ? 'active' : undefined}>Style me!</p>
+      <button onClick={toggleHandler}>Toggle style</button>
     </div>
   );
 }

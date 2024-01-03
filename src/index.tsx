@@ -7,6 +7,7 @@ import Essentials from './03Essentials/Essentials';
 import ConditionalContentTest from './03Essentials/exercises/ConditionalContentTest';
 import ConditionalContent from './03Essentials/exercises/ConditionalContent'
 import DynamicStyling from './03Essentials/exercises/DynamicStyling';
+import Todo from './03Essentials/exercises/Todo';
 
 
 const root = ReactDOM.createRoot(
@@ -14,12 +15,16 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    {/* Part1 */}
     {/* <Starter /> */}
+    {/* Part2 */}
     {/* <JSRefresher /> */}
-    {/* <Essentials /> */}
+    {/* Part3 */}
     {/* <ConditionalContentTest /> */}
     {/* <ConditionalContent /> */}
-    <DynamicStyling />
+    {/* <DynamicStyling /> */}
+    <Todo />
+    {/* <Essentials /> */}
   </React.StrictMode>
 );
 
