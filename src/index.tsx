@@ -8,6 +8,7 @@ import ConditionalContentTest from './03Essentials/exercises/ConditionalContentT
 import ConditionalContent from './03Essentials/exercises/ConditionalContent'
 import DynamicStyling from './03Essentials/exercises/DynamicStyling';
 import Todo from './03Essentials/exercises/Todo';
+import TodoTesting from './03Essentials/exercises/TodoTesting';
 
 
 const root = ReactDOM.createRoot(
@@ -23,7 +24,8 @@ root.render(
     {/* <ConditionalContentTest /> */}
     {/* <ConditionalContent /> */}
     {/* <DynamicStyling /> */}
-    <Todo />
+    {/* <Todo /> */}
+    <TodoTesting />
     {/* <Essentials /> */}
   </React.StrictMode>
 );
