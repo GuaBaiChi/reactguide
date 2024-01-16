@@ -25,8 +25,8 @@ root.render(
     {/* <ConditionalContent /> */}
     {/* <DynamicStyling /> */}
     {/* <Todo /> */}
-    <TodoTesting />
-    {/* <Essentials /> */}
+    {/* <TodoTesting /> */}
+    <Essentials />
   </React.StrictMode>
 );
 
